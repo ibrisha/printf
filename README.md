@@ -1,2 +1,2 @@
-0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+
 This Repo has has all the code necessary for our (IBRAHIM MORKETA and rediet abdisa) custom function called _printf(). It is a mini-version of C Language function printf() from stdio.h, and our function _printf() attempts to replicate the exact same process as the C function printf(). This project was completed as a part of the curriculum for a software development program
