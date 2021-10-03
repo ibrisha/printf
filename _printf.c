@@ -7,42 +7,42 @@
  * information on how it works.
  * Return: number of characters printed
  */
-int _printf(const char *format, ...)
+int _printf(const char * const format, ...)
 {
-	va_list args_list;
-	inventory_t *inv;
-	void (*temp_func)(inventory_t *);
+	convert_match m[] = {
+		{"%s", printf_string}, {"%c", printf_char},
+		{"%%", printf_37},
+		{"%i", printf_int}, {"%d", printf_dec}, {"%r", printf_srev},
+		{"%R", printf_rot13}, {"%b", printf_bin}, {"%u", printf_unsigned},
+		{"%o", printf_oct}, {"%x", printf_hex}, {"%X", printf_HEX},
+		{"%S", printf_exclusive_string}, {"%p", printf_pointer}
+	};
 
-	if (!format)
+	va_list args;
+	int i = 0, j, len = 0;
+
+	va_start(args, format);
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-	va_start(args_list, format);
-	inv = build_inventory(&args_list, format);
 
-	while (inv && format[inv->i] && !inv->error)
+Here:
+	while (format[i] != '\0')
 	{
-		inv->c0 = format[inv->i];
-		if (inv->c0 != '%')
-			write_buffer(inv);
-		else
+		j = 13;
+		while (j >= 0)
 		{
-			parse_specifiers(inv);
-			temp_func = match_specifier(inv);
-			if (temp_func)
-				temp_func(inv);
-			else if (inv->c1)
+			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
 			{
-				if (inv->flag)
-					inv->flag = 0;
-				write_buffer(inv);
+				len += m[j].f(args);
+				i = i + 2;
+				goto Here;
 			}
-			else
-			{
-				if (inv->space)
-					inv->buffer[--(inv->buf_index)] = '\0';
-				inv->error = 1;
-			}
+			j--;
 		}
-		inv->i++;
+		_putchar(format[i]);
+		len++;
+		i++;
 	}
-	return (end_func(inv));
+	va_end(args);
+	return (len);
 }
