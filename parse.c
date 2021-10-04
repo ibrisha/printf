@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * parse_specifiers - parses characters that follow the % character
- * @inv: the arguments inventory
+ * @inv: arguments inventory
  */
 void parse_specifiers(inventory_t *inv)
 {

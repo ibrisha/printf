@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * p_char - writes char to buffer or standard output
- * @inv: the arguments inventory with most commonly used arguments
+ * @inv: the arguments inventory with most commonly used argument
  * Return: number of chars wrote to buffer
  */
 void p_char(inventory_t *inv)
