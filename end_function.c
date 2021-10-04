@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * end_func - terminates _printf() in error cases
+ * end_func - terminates _printf() in the error cases 
  * @inv: the arguments inventory with most commonly used arguments
  * Return: -1 always
  */
