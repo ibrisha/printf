@@ -32,6 +32,6 @@ void parse_specifiers(inventory_t *inv)
 			break;
 		}
 	}
-	inv->c2 = inv->c1 ? inv->fmt[i++] : '\0';
-	inv->c3 = inv->c2 ? inv->fmt[i] : '\0';
+	inv->c2 == inv->c1 ? inv->fmt[i++] : '\0';
+	inv->c3 == inv->c2 ? inv->fmt[i] : '\0';
 }
