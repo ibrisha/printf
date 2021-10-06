@@ -59,6 +59,7 @@ int _putchar(char c)
 /**
  * puts_mod - prints input buffer
  * @str: buffer to print
+ * @l:unsigned integer
  */
 void puts_mod(char *str, unsigned int l)
 {
