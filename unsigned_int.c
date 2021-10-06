@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_unsign - writes unsigned long integers to the buffer 
+ * print_unsign - writes unsigned long integers to the buffer
  * @inv: the arguments inventory with most commonly used arguments
  * @n: unsigned long int to print (function can be used for shorts as well)
  */
