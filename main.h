@@ -98,7 +98,7 @@ void print_ulongint(inventory_t *inv);
 
 /* octals */
 void print_oct(inventory_t *inv, unsigned long int n, int size);
-void print_oct(inventory_t *inv);
+void print_oct2(inventory_t *inv);
 void print_longoct(inventory_t *inv);
 
 /* handles specifier functions */

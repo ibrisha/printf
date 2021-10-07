@@ -12,7 +12,7 @@ void (*match_specifier(inventory_t *inv))(inventory_t *)
 	static const char modifiers[] = "hl+#";
 	static matches_t specifiers_list[] = {
 		{'d', print_int}, {'i', print_int}, {'x', print_lowhex},
-		{'X', print_uphex}, {'o', print_oct}, {'u', print_ulongint},
+		{'X', print_uphex}, {'o', print_oct2}, {'u', print_ulongint},
 		{'c', print_char}, {'s', print_string}, {'%', print_percent},
 		{'b', print_binary}, {'p', print_pointer}, {'r', print_rev_string},
 		{'R', print_rot13}, {'S', print_string_hex}, {'\0', NULL}
