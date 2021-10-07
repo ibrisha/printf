@@ -52,10 +52,10 @@ void print_hex(inventory_t *inv, unsigned long int n, int hexcase, int size)
 }
 
 /**
- * p_lowhex - writes unsigned integer to buffer in base hexidecimal downcase
+ * print_lowhex - writes unsigned integer to buffer in base hexidecimal lower
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_lowhex(inventory_t *inv)
+void print_lowhex(inventory_t *inv)
 {
 	unsigned int n;
 
@@ -65,10 +65,10 @@ void p_lowhex(inventory_t *inv)
 }
 
 /**
- * p_uphex - writes unsigned integer to buffer in base hexidecimal upcase
+ * print_uphex - writes unsigned integer to buffer in base hexidecimal upcase
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_uphex(inventory_t *inv)
+void print_uphex(inventory_t *inv)
 {
 	unsigned int n;
 
@@ -78,10 +78,10 @@ void p_uphex(inventory_t *inv)
 }
 
 /**
- * p_longlowhex - writes unsigned long int in base hexidecimal
+ * print_longlowhex - writes unsigned long int in base hexidecimal
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_longlowhex(inventory_t *inv)
+void print_longlowhex(inventory_t *inv)
 {
 	unsigned long int n;
 
@@ -91,10 +91,10 @@ void p_longlowhex(inventory_t *inv)
 }
 
 /**
- * p_longuphex - writes unsigned long integer in base hexidecimal upcase
+ * print_longuphex - writes unsigned long integer in base hexidecimal upcase
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_longuphex(inventory_t *inv)
+void print_longuphex(inventory_t *inv)
 {
 	unsigned long int n;
 

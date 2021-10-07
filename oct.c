@@ -46,10 +46,10 @@ void print_oct(inventory_t *inv, unsigned long int n, int size)
 }
 
 /**
- * p_oct - writes unsigned integer to buffer in base 8: octal
+ * print_oct - writes unsigned integer to buffer in base 8: octal
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_oct(inventory_t *inv)
+void print_oct(inventory_t *inv)
 {
 	unsigned int n;
 
@@ -59,10 +59,10 @@ void p_oct(inventory_t *inv)
 }
 
 /**
- * p_longoct - writes unsigned long integer to buffer or stdout in base 8
+ * print_longoct - writes unsigned long integer to buffer or stdout in base 8
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_longoct(inventory_t *inv)
+void print_longoct(inventory_t *inv)
 {
 	unsigned long int n;
 
