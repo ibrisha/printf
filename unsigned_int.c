@@ -33,10 +33,10 @@ void print_unsign(inventory_t *inv, unsigned long int n)
 }
 
 /**
- * p_uint - writes unsigned integers to buffer or stdout in decimal
+ * print_uint - writes unsigned integers to buffer or stdout in decimal
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_uint(inventory_t *inv)
+void print_uint(inventory_t *inv)
 {
 	unsigned int n;
 
@@ -46,10 +46,10 @@ void p_uint(inventory_t *inv)
 }
 
 /**
- * p_ulongint - writes unsigned long integers to buffer or stdout in decimal
+ * print_ulongint - writes unsigned long integer to buffer or stdout in decimal
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_ulongint(inventory_t *inv)
+void print_ulongint(inventory_t *inv)
 {
 	unsigned long int n;
 

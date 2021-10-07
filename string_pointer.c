@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * p_string_hex - writes string to buffer or stdout ascii
+ * print_string_hex - writes string to buffer or stdout ascii
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_string_hex(inventory_t *inv)
+void print_string_hex(inventory_t *inv)
 {
 	char *string, *temp, *hexvalues, *null_string;
 	int c = 0, num;
@@ -42,10 +42,10 @@ void p_string_hex(inventory_t *inv)
 	}
 }
 /**
- * p_pointer - writes pointer value (an address) to buffer in hexidecimal
+ * print_pointer - writes pointer value (an address) to buffer in hexidecimal
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_pointer(inventory_t *inv)
+void print_pointer(inventory_t *inv)
 {
 	int i, j;
 	unsigned long int pointer_value;

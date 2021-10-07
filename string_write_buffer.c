@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * p_string - writes string to buffer or stdout...
+ * print_string - writes string to buffer or stdout...
  * @inv: the arguments inventory with most commonly used
  * Return: number of chars wrote to buffer
  */
-void p_string(inventory_t *inv)
+void print_string(inventory_t *inv)
 {
 	int l;
 	char *string, *null_string;
