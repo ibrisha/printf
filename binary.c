@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * p_binary - writes unsigned integer to buffer
+ * print_binary - writes unsigned integer to buffer
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_binary(inventory_t *inv)
+void print_binary(inventory_t *inv)
 {
 	unsigned int n = va_arg(*(inv->args), unsigned int);
 	int i, j;

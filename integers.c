@@ -45,10 +45,10 @@ void print_integers(inventory_t *inv, long int n)
 }
 
 /**
- * p_int - writes integers to buffer
+ * print_int - writes integers to buffer
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_int(inventory_t *inv)
+void print_int(inventory_t *inv)
 {
 	int n;
 
@@ -58,10 +58,10 @@ void p_int(inventory_t *inv)
 }
 
 /**
- * p_longint - writes long integers to buffer
+ * print_longint - writes long integers to buffer
  * @inv: the arguments inventory with most commonly used arguments
  */
-void p_longint(inventory_t *inv)
+void print_longint(inventory_t *inv)
 {
 	long int n;
 
