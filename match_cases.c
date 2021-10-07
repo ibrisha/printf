@@ -11,14 +11,16 @@ void (*match_specifier(inventory_t *inv))(inventory_t *)
 	char check = inv->c1;
 	static const char modifiers[] = "hl+#";
 	static matches_t specifiers_list[] = {
-		{'d', p_int}, {'i', p_int}, {'x', p_lowhex}, {'X', p_uphex},
-		{'o', p_oct}, {'u', p_ulongint}, {'c', p_char}, {'s', p_string},
-		{'%', p_percent}, {'b', p_binary}, {'p', p_pointer},
-		{'r', p_rev_string}, {'R', p_rot13}, {'S', p_string_hex}, {'\0', NULL}
+		{'d', print_int}, {'i', print_int}, {'x', print_lowhex},
+		{'X', print_uphex}, {'o', print_oct}, {'u', print_ulongint},
+		{'c', print_char}, {'s', print_string}, {'%', print_percent},
+		{'b', print_binary}, {'p', print_pointer}, {'r', print_rev_string},
+		{'R', print_rot13}, {'S', print_string_hex}, {'\0', NULL}
 	};
 	static matches_t modifiers_long[] = {
-		{'d', p_longint}, {'i', p_longint}, {'x', p_longlowhex},
-		{'X', p_longuphex}, {'o', p_longoct}, {'u', p_ulongint}, {'\0', NULL}
+		{'d', print_longint}, {'i', print_longint},
+		{'x', print_longlowhex}, {'X', print_longuphex},
+		{'o', print_longoct}, {'u', print_ulongint}, {'\0', NULL}
 	};
 
 	for (j = 0; modifiers[j] != '\0'; j++)
