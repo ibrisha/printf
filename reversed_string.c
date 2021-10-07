@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * p_rev_string - writes string to buffer or stdout in reverse
+ * print_rev_string - writes string to buffer or stdout in reverse
  * @inv: the arguments inventory with most commonly used arguments
  * Return: number of chars wrote to buffer
  */
-void p_rev_string(inventory_t *inv)
+void print_rev_string(inventory_t *inv)
 {
 	int i = 0, j, length;
 	char *string, *copy;
